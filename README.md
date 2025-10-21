@@ -1,5 +1,7 @@
 # Certfication Challenge
 
+## LOOM VIDEO: https://www.loom.com/share/71c62509cdcc44ffb81d43b87d9a27e6
+
 ## Defining Your Problem & Audience
 
 ### Write a succinct 1-sentence description of the problem
