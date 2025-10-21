@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Certification Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-solar-panel"></i>
+                    <h1>Solar Certification Assistant</h1>
+                    <div class="status-indicator" id="statusIndicator">
+                        <i class="fas fa-circle"></i>
+                        <span>Connecting...</span>
+                    </div>
+                </div>
+                <p class="subtitle">Get solar potential analysis and zoning regulations for any location</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Query Input Section -->
+            <section class="query-section">
+                <div class="query-container">
+                    <h2>Ask About Solar Development</h2>
+                    <div class="input-group">
+                        <textarea 
+                            id="queryInput" 
+                            placeholder="Ask about solar potential at a specific address or zoning regulations for a municipality..."
+                            rows="3"
+                        ></textarea>
+                        <button id="submitBtn" class="submit-btn">
+                            <i class="fas fa-search"></i>
+                            Analyze
+                        </button>
+                    </div>
+                    
+                    <!-- Example Queries -->
+                    <div class="examples">
+                        <h3>Try these examples:</h3>
+                        <div class="example-queries">
+                            <button class="example-btn" data-query="Evaluate solar potential at 47 Newton St, Barre, MA 01005">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Solar Potential</strong>
+                                    <small>Get solar irradiance data for any address</small>
+                                </div>
+                            </button>
+                            <button class="example-btn" data-query="In Barre, MA, what are the zoning regulations for solar development?">
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <strong>Zoning Regulations</strong>
+                                    <small>Municipality-specific solar rules</small>
+                                </div>
+                            </button>
+                            <button class="example-btn" data-query="What are the solar development requirements in Ashburnham, MA?">
+                                <i class="fas fa-clipboard-list"></i>
+                                <div>
+                                    <strong>Requirements</strong>
+                                    <small>Development standards and permits</small>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-container">
+                    <h2>Analysis Results</h2>
+                    <div id="resultsContent" class="results-content">
+                        <!-- Results will be populated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <p>Analyzing your query...</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Solar Certification Assistant. Powered by AI and solar data.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">API</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
