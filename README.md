@@ -94,7 +94,7 @@ I decided to implement a ```RecursiveCharacterTextSplitter``` chunker with ```ch
 
 ### What conclusions can you draw about the performance and effectiveness of your pipeline with this information?
 
-Recall is quite good, but precision is not great; this means that many chunks which are not relevant to the user query are being fetched from the vector store. This will directly impact faithfulness and answer relevancy, as irrelvant information in the context window will degrade the performance of the application.
+Recall is alright, but precision is not great; this means that many chunks which are not relevant to the user query are being fetched from the vector store. This will directly impact faithfulness and answer relevancy, as irrelvant information in the context window will degrade the performance of the application.
 
 ## Advanced Retrieval
 
