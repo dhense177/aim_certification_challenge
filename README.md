@@ -24,7 +24,7 @@ My proposed solution would provide solar developers with a suite of tools to man
 
 **Example**
 
-From Paces Website: Us: "a 2-megawatt ground-mount or freestanding solar system that requires about 12 acres of land and sells power back to the electricity grid such that a majority of electricity produced is not consumed on site and it is used for commercial purposes”
+From [Paces](https://www.paces.com/post/permitting-risk-with-large-language-models) Website: Us: "a 2-megawatt ground-mount or freestanding solar system that requires about 12 acres of land and sells power back to the electricity grid such that a majority of electricity produced is not consumed on site and it is used for commercial purposes”
 
 ### Describe the tools you plan to use in each part of your stack. Write one sentence on why you made each tooling choice.
 
@@ -69,13 +69,13 @@ The initial user interface will be a simple chat interface. Additional UI featur
 
 #### Initial Data Sources
 
-- Massachusetts Municipality-Level Regulations
+- [Massachusetts Municipality-Level Regulations](https://www.mass.gov/law-library/massachusetts-city-town-ordinances-and-bylaws)
 
 
 #### Initial External APIs
 
-- NREL Solar API
-- Nominatim Geocoder
+- [NREL Solar API](https://developer.nrel.gov/docs/solar/solar-resource-v1/)
+- [Nominatim Geocoder](https://nominatim.org/)
 
 ### Describe the default chunking strategy that you will use. Why did you make this decision?
 
